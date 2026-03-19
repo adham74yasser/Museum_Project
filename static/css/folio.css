@@ -1,0 +1,78 @@
+:root {
+    --first-color:#C5A059;
+    --sac-color:#fff;
+    --third-color:#020305;
+    --font-FjallaOne-Regular:"FjallaOne-Regular";
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--sac-color) !important;
+}
+
+
+/* start sec */
+.container {
+    margin: 200px 0 ;
+    gap: 130px !important;
+}
+.container .cardFolio
+,.cardFolioRight {
+    width: 80%;
+    height: 300px;
+    position: relative;
+    background:url(../img/backgroundCard2.png) center;
+    padding: 20px 0;
+    border-radius: 0 100px 100px 100px;
+    box-shadow: 0 0 15px var(--first-color);
+}
+
+.cardFolioRight {
+    border-radius: 100px 0px 100px 100px; 
+    margin: auto;
+}
+
+.container .cardFolio .card-img
+,.cardFolioRight .card-img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+
+}
+
+.container .cardFolio .card-img img
+,.cardFolioRight .card-img img {
+    position: absolute;
+    top: -50%;
+    left: -3px;
+    width: 106%;
+    height: 146%;
+}
+
+.body-card {
+    font-family: var(--font-FjallaOne-Regular);
+    color: var(--first-color);
+    position: relative;
+}
+
+.body-card b{
+    color: goldenrod;
+}
+
+.body-card p {
+    line-height: 30px;
+}
+
+.body-card .btn{
+    position: absolute;
+    overflow: hidden;
+    padding: 10px 20px ;
+    color: goldenrod !important;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.body-card .btn:hover {
+    letter-spacing: 2px;
+}

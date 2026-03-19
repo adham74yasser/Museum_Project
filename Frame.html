@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مستكشف الآثار الذكي</title>
+    <link rel="stylesheet" href="static/css/frame.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="glow-text">المستكشف الذكي</h1>
+            <div id="label-container" class="status-badge">جاري تحميل الموديل...</div>
+        </header>
+
+        <main>
+            <div class="main-controls">
+                <button class="btn primary-btn" onclick="startWebcam()">🎥 تشغيل الكاميرا</button>
+                <label for="image-upload" class="btn secondary-btn">
+                    📁 ارفع صورة تمثال
+                </label>
+                <input type="file" id="image-upload" accept="image/*" style="display:none" onchange="handleFileUpload(event)">
+            </div>
+
+            <div class="visual-wrapper">
+                <div id="webcam-container" class="camera-frame"></div>
+                <img id="uploaded-image-preview" src="" style="display:none;">
+                <video id="statue-video" class="video-frame" controls></video>
+            </div>
+
+            <div id="buttons-group" class="action-buttons" style="display:none;">
+                <button class="btn primary-btn" onclick="window.location.href='folio.html'">folio</button>
+                <button class="btn info-btn" onclick="window.location.href='vision.html'">vision</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="static/js/frame.js"></script>
+</body>
+</html>

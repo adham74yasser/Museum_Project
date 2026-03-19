@@ -1,0 +1,78 @@
+:root {
+    --gold: #d4af37;
+    --dark: #121212;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 700px;
+    text-align: center;
+    padding: 20px;
+}
+
+.glow-text {
+    color: var(--gold);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+.status-badge {
+    padding: 10px;
+    border: 1px solid var(--gold);
+    border-radius: 10px;
+    margin: 15px 0;
+    font-size: 0.9rem;
+    background: rgba(212, 175, 55, 0.1);
+}
+
+.main-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.visual-wrapper {
+    position: relative;
+    border: 2px solid var(--gold);
+    border-radius: 15px;
+    overflow: hidden;
+    background: #000;
+    min-height: 300px;
+}
+
+.camera-frame canvas, #uploaded-image-preview, .video-frame {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn { background: var(--gold); color: #000; }
+.secondary-btn { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
+.info-btn { background: #333; color: #fff; }
+
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
