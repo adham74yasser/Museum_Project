@@ -27,29 +27,24 @@ img{
 body {
     background-color: var(--third-color) !important;
 }
+body, html {
+    overflow-x: hidden; 
+    width: 100%;
+}
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 
 /* start nav */
 nav {
     height: 60px;
     background-color: var(--third-color);
-    box-shadow: 0 0 10px 0px var(--first-color) ;
-}
-
-.linkNav {
-    width: 50%;
-    height: 100%;
-}
-
-.linkNav ul{
+    /* box-shadow: 0 0 10px 0px var(--first-color) ; */
     width: 100%;
-    height: 100%;
-    gap: 10px;
-}
-
-.linkNav ul li {
-    width: calc((100% - 40px ) /  5);
+    z-index: 999999999;
 }
 
 .linkNav ul li::after
@@ -160,7 +155,6 @@ nav {
 .iconMain {
   color: var(--first-color);  
   cursor: pointer;
-  display: none;
 }
 
 .main {
@@ -174,32 +168,6 @@ nav {
     transform: translateX(0);
 }
 
-
-.main .icon.d-flex  {
-    display: flex !important;
-}
-
-/* start Responsive */
-@media (max-width: 992px ) {    
-    .linkNav {
-        width: 70%;
-    }
-}
-@media (max-width: 576px ) {   
-    
-    nav.px-5 {
-        padding: 10px !important;
-    }
-    .linkNav.d-flex
-    ,.icon.d-flex {
-        display: none !important;
-    }
-    
-    .iconMain {
-    display: flex !important;
-    }
-}
-/* end Responsive */
 /* end nav */
 /* start header */
 header {
@@ -281,7 +249,7 @@ header p {
     }
     .titleHeader a {
         margin: auto;
-        width: 30%;
+        width: unset;
     }
 }
 @media (max-width: 768px ) {    
@@ -313,7 +281,7 @@ header p {
 .about {
     background-color: #020305;
     padding: 0px 60px;
-    margin: 100px 0;
+    margin: 100px  0 !important;
 }
 
 .aboutUs {
@@ -356,24 +324,19 @@ header p {
 } */
 
 .cardAbout .img {
-    width: 70%;
+    /* width: 70%; */
     border-radius: 20px;
-    position: relative;
     transition: 0.5s;
-    overflow: hidden;
 }
 
 .cardAbout .img img:last-child{
-    position: absolute;
     opacity: 0;
     transition: 0.5s;
 }
 
 .cardAbout .imgRotate{
-    position: absolute;
-    width: 64%;
-    top: -129px;
-    left: 137px;
+    top: 36%;
+    left: 53%;
     z-index: 99999;
     perspective: 2000px;
     transform: rotateX(40deg) rotateZ(-1deg);
@@ -382,10 +345,7 @@ header p {
 }
 
 .cardAbout .imgRotate2{
-    position: absolute;
-    width: 81%;
-    top: 168px;
-    left: 57px;
+    top: 84%;
     z-index: 99999;
     opacity: 0;
     transition: 0.5s;
@@ -399,12 +359,11 @@ header p {
 
 .cardAbout span {
     border: 2px solid var(--first-color);
-    height: 50px;
-    padding: 10px 20px;
+    height: 43px;
     border-radius: 20px;
-    position: absolute;
-    top: -22px;
-    left: 75px;
+    width: max-content;
+    top: 0%;
+    left: 11%;
     color: var(--sac-color);
     font-family: var(--font-FjallaOne-Regular);
     opacity: 0;
@@ -414,50 +373,12 @@ header p {
 /* strat Responsive */
 
 @media (max-width: 576px ) {
-    .about {
-        padding: 0px 25px;
-    }
-    .cardAbout .imgRotate {
-        top: -34px;
-        left: 40px;
-        width: unset;
-    }
-    .cardAbout .img {
-        width: unset;
-    }
-    .cardAbout .imgRotate2 {
-        width: 120%;
-        top: 193px;
-        left: -45px;
-    }
     .cardAbout span {
-        top: -47px;
-        left: 30px;
+        top: -15%;
+        left: unset;
     }
 }
 
-@media (max-width: 350px ) {
-    .about {
-        padding: 0px 25px;
-    }
-    .cardAbout .imgRotate {
-        top: -34px;
-        left: 16px;
-        width: unset;
-    }
-    .cardAbout .img {
-        width: unset;
-    }
-    .cardAbout .imgRotate2 {
-        width: 100%;
-        top: 136px;
-        left: 15px;
-    }
-    .cardAbout span {
-        top: -47px;
-        left: 30px;
-    }
-}
 /* end Responsive */
 
 /* end about */
@@ -485,22 +406,12 @@ header p {
     font-size: 60px;
     color: goldenrod;
 }
-
-.dataNum p{
-    font-size: 16px;
-}
-
 /* strat Responsive */
 
-@media (max-width: 576px ) {
-    .data {
-        height: unset;
-    }
-    .dataNum b {
-        font-size: 40px;
-    }
-    .dataNum p{
-        font-size: 10px;
+@media (max-width: 768px ) {
+    .dataNum  {
+        border-left:unset;
+        border-bottom: 2px solid var(--first-color);
     }
 }
 /* end Responsive */
@@ -536,21 +447,12 @@ header p {
 .container .cards .imgCard img {
     transition: 0.5s;
     position: absolute;
-    top: -18px;
-    left: -140px;
-    height: 105%;
-}
-
-
-.container .cards .imgCard{ 
-    width: 50%;
+    top: 0%;
+    left: -23%;
 }
 
 .container .cards .titleCard{ 
-    width: 50%;
     font-family: var(--font-FjallaOne-Regular);
-    flex-direction: column;
-    align-items: self-start;
 }
 
 .container .cards .titleCard b{ 
@@ -599,12 +501,13 @@ header p {
         flex-direction: column-reverse;
     }
     .container .cards .imgCard img {
-        top: 5px;
+        top: 0;
         left: 0 !important;
         height: 85% !important;
     }
 
     .titleCard p 
+    ,.titleCard a
     ,.titleCard b {
         display: none;
     }
@@ -628,17 +531,6 @@ header p {
 }
 /* end videoAi */
 /* start services */
-.services {
-    height:100vh;
-    overflow: hidden;
-}
-
-.pannerServices  {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
 .tittle {
     font-family: var(--font-FjallaOne-Regular);
     font-size: 30px;
@@ -651,8 +543,7 @@ header p {
 .pannerServices  img{
     position: absolute;
     top: 0;
-    left: -32px;
-    width: 30%;
+    left:-37%;
 }
 
 .ourServices {
@@ -769,50 +660,31 @@ header p {
     ,.boxpopup3
     ,.boxpopup4
     ,.boxpopup5{
-        right: 28%;
+        right: 5%;
     }
 
     .tittle {
-        top: 50%;
-        right: -32px;
-        transform: rotate(-90deg);
-    }
-
-    .end {
-        top: 50%;
-        right: -52%;
-    }
-
-    .popup {
-        display: none;
+        top: 83%;
+        right: -10%;
+        transform: rotate(-60deg);
     }
 }
 /* end Responsive */
 
 /* end services */
 /* start footer */
-.box {
-    height: 100px;
-}
-
-.logoFooter {
-    width: 20%;
-}
-
-.box .icon.d-flex {
-    width: 60%;
-}
-.copyRight {
-    width: 20%;
-}
-
 footer {
     box-shadow: 0 0 15px 0 var(--first-color) inset;
     color: var(--first-color);
 }
 
-/* strat Responsive */
 
+.logoFooter {
+    height: 100px;
+}
+
+/* strat Responsive */
+/* 
 @media (max-width: 768px ) {
 }
 
@@ -834,6 +706,6 @@ footer {
     .endFooter {
         margin-top: 20px;
     }
-}
+} */
 /* end Responsive */
 /* end footer */

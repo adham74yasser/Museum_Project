@@ -6,10 +6,10 @@ let aboutTimer;
   let res = 0;
   let delet = false
   let speed = 200;
+  const target = $(selector);
   
   function type() {
     const currentWord = wordsList[index];
-    const target = $(selector);
     
     if (delet) {
       target.text(currentWord.substring(0,res - 1))
