@@ -1,0 +1,143 @@
+:root {
+    --first-color:#C5A059;
+    --sac-color:#fff;
+    --third-color:#020305;
+    --font-FjallaOne-Regular:"FjallaOne-Regular";
+}
+
+.container {
+    border:  2px solid goldenrod;
+    transition: 0.5s;
+}
+
+
+.container:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.card {
+    background-color: black !important;
+}
+
+.card-img::after {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 2px dashed goldenrod;
+}
+
+.container span{
+    border: 2px solid goldenrod;
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% ;
+}
+
+
+.container  > span:nth-child(1){
+    width: 30px;
+    left: 12px;
+    border-left: 0;
+}
+
+.container  > span:nth-child(2){
+    width: 30px;
+    right: -18px;
+    border-right: 0;
+}
+
+.card-img  span:nth-child(1){
+    top: 12px; 
+    height: 30px;
+    border-top: 0;
+}
+
+.card-img  span:nth-child(2){
+    bottom: -18px; 
+    height: 30px;
+    border-bottom: 0;
+}
+
+
+.body-card b {
+    font-family: var(--font-FjallaOne-Regular);
+    color: var(--first-color);
+}
+
+.body-card p:nth-child(2) {
+    color: goldenrod !important;
+    font-family: var(--font-FjallaOne-Regular);
+}
+
+.body-card p:nth-child(3) {
+    color: var(--sac-color) !important;
+}
+.body-card span {
+    color: var(--sac-color) !important;
+    border-radius: 0;
+    border: none;
+    background-color: #000000c9;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container:hover .body-card span  {
+    opacity: 1;
+}
+
+.fa-circle-play {
+    font-size: 70px;
+    color: goldenrod;
+} 
+
+
+.videKing {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #0203056a;
+    width: 100%;
+    z-index: 666666666666666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.videKing.hidden {
+    opacity: 1;
+    visibility: visible;
+}
+
+.videKing div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videKing video {
+    width: 90%;
+    height: 90%;
+}
+
+.videKing p {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--first-color);
+    cursor: pointer;
+}

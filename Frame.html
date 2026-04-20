@@ -17,7 +17,7 @@
         <main>
             <div class="main-controls">
                 <button class="btn primary-btn" onclick="startWebcam()">🎥 تشغيل الكاميرا</button>
-                <label for="image-upload" class="btn secondary-btn">
+                <label for="image-upload" class="btn secondary-btn" id="upload-label">
                     📁 ارفع صورة تمثال
                 </label>
                 <input type="file" id="image-upload" accept="image/*" style="display:none" onchange="handleFileUpload(event)">
@@ -35,9 +35,8 @@
             </div>
         </main>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.4/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.4/dist/teachablemachine-image.min.js"></script>
     <script src="static/js/frame.js"></script>
 </body>
 </html>

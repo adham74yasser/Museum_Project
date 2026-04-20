@@ -37,7 +37,8 @@ let Card = [
     {
         img  : "static/img/Ramesses IICard.png",
         name : "Ramesses II",
-        dic : "I have returned from the darkness of centuries to tell you the story of a throne I claimed as a child, and a world I reshaped with my own hands. My tomb was not just a burial, but a message of eternity spoken in gold when all went silent. Are you ready to learn how I faced my destiny?....."
+        dic : "I have returned from the darkness of centuries to tell you the story of a throne I claimed as a child, and a world I reshaped with my own hands. My tomb was not just a burial, but a message of eternity spoken in gold when all went silent. Are you ready to learn how I faced my destiny?.....",
+        url:"RamessesII.html"
     },
     {
         img : "static/img/SekhmetCard.png",
@@ -75,7 +76,7 @@ Card.forEach((e,index)=>{
             <div class="body-card flex-column w-50">
                 <b class="fs-1" >${e.name}</b>
                 <p class="py-0 text-uppercase w-100 ">${e.dic}</p>
-                <a class="btn ps-0 " >Reveal My Secrets</a>
+                <a class="btn ps-0 " href=${e.url} >Reveal My Secrets</a>
             </div>
         </div>`
     )

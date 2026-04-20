@@ -10,7 +10,10 @@ a {
     color: var(--sac-color) !important;
 }
 
-
+header {
+    height: 100vh !important;
+    background: url(../img/headerBg.jpg) no-repeat center/100% 100%;
+}
 /* start sec */
 .container {
     margin: 200px 0 ;

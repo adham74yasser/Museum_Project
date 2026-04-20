@@ -1,0 +1,48 @@
+:root {
+    --first-color:#C5A059;
+    --sac-color:#fff;
+    --third-color:#020305;
+}
+header {
+    background: url(../img/headerBgKing.jpg) no-repeat center / 100% 100%;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 50px;
+}
+header::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #02030548;
+    z-index: 1;
+}
+.dit p{
+    color: var(--first-color);
+    margin: 2px;
+}
+.dit p span{
+    color: var(--sac-color);
+}
+
+.col-9 h1 {
+    color: var(--sac-color);
+}
+
+.col-9 p  {
+    color: var(--first-color);
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.row {
+    --bs-gutter-x: none !important;
+}
+
+.col-2 {
+    height: max-content;
+    position: sticky;
+    top: 70px;
+}
