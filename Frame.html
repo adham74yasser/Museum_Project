@@ -1,42 +1,60 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مستكشف الآثار الذكي</title>
+    <title data-en="Statue Explorer" data-ar="مستكشف الآثار الذكي">Statue Explorer</title>
     <link rel="stylesheet" href="static/css/frame.css">
+    <!-- ضفت لك مكتبة FontAwesome لو محتاج أيقونة اللغة هنا برضه -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <div class="container">
+        <!-- زر تبديل اللغة (اختياري لو عايز تضيفه في الصفحة دي) -->
+        <div style="position: absolute; top: 20px; right: 20px; z-index: 1000;">
+            <a href="javascript:void(0)" id="lang-switch" style="color: white; font-size: 24px; text-decoration: none;">
+                <i class="fa-solid fa-globe"></i>
+            </a>
+        </div>
+
         <header>
-            <h1 class="glow-text">المستكشف الذكي</h1>
-            <div id="label-container" class="status-badge">جاري تحميل الموديل...</div>
+            <div id="label-container" class="status-badge" 
+                 data-en="Loading the model..." 
+                 data-ar="جاري تحميل النموذج...">Loading the model...</div>
         </header>
 
         <main>
             <div class="main-controls">
-                <button class="btn primary-btn" onclick="startWebcam()">🎥 تشغيل الكاميرا</button>
-                <label for="image-upload" class="btn secondary-btn" id="upload-label">
-                    📁 ارفع صورة تمثال
-                </label>
+                <button class="btn primary-btn" onclick="startWebcam(true)" 
+                        data-en="Front Camera" data-ar="الكاميرا الأمامية">Front Camera</button>
+                <button class="btn primary-btn" onclick="startWebcam(false)" 
+                        data-en="Back Camera" data-ar="الكاميرا الخلفية">الكاميرا الخلفية</button>
+                
+                <label for="image-upload" class="btn secondary-btn" id="upload-label" 
+                       data-en="Upload a statue image" data-ar="رفع صورة تمثال">Upload a statue image</label>
                 <input type="file" id="image-upload" accept="image/*" style="display:none" onchange="handleFileUpload(event)">
             </div>
 
             <div class="visual-wrapper">
                 <div id="webcam-container" class="camera-frame"></div>
                 <img id="uploaded-image-preview" src="" style="display:none;">
-                <video id="statue-video" class="video-frame" controls></video>
+                <video id="statue-video" class="video-frame" playsinline></video>
             </div>
 
             <div id="buttons-group" class="action-buttons" style="display:none;">
-                <button class="btn primary-btn" onclick="window.location.href='folio.html'">folio</button>
-                <button class="btn info-btn" onclick="window.location.href='vision.html'">vision</button>
+                <p></p> <!-- ده بيتحط فيه اسم التمثال من الـ JS -->
+                <a href="Folio.html" class="btn primary-btn" data-en="Folio" data-ar="أعمالنا">Folio</a>
+                <a href="vision.html" class="btn primary-btn" data-en="Vision" data-ar="رؤيتنا">Vision</a>
             </div>
         </main>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.4/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.4/dist/teachablemachine-image.min.js"></script>
+    <!-- تأكد من استدعاء JQuery قبل main.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="static/js/main.js"></script> <!-- ملف الـ API بتاعنا -->
     <script src="static/js/frame.js"></script>
 </body>
 </html>

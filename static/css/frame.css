@@ -3,6 +3,9 @@
     --dark: #121212;
     --white: #ffffff;
 }
+a {
+    text-decoration: none;
+}
 
 body {
     background-color: var(--dark);

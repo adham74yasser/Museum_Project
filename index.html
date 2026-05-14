@@ -1,216 +1,579 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="static/css/style.css">
-        <link rel="stylesheet" href="static/css/all.min.css">
-        <link rel="stylesheet" href="static/vendors/slick/slick.css">
-        <link rel="stylesheet" href="static/vendors/slick/slick-theme.css">
-        <link rel="stylesheet" href="static/vendors/animations/animate.css-main/animate.css">
-        <link rel="stylesheet" href="static/vendors/bootstrap-5.3.8-dist/css/bootstrap.min.css">
-        <title>Document</title>
-    </head>
-    <body >
-        <nav class="row w-100 px-0 px-xl-5 g-0 justify-content-between align-items-center position-fixed top-0">
-            <div class="logo h-100 col-2 col-md-1 col-lg-2 text-align-start">
-                <a href="Folio.html"><img src="static/img/logo.png" alt=""></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/all.min.css" />
+    <link rel="stylesheet" href="static/vendors/slick/slick.css" />
+    <link rel="stylesheet" href="static/vendors/slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="static/vendors/animations/animate.css-main/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="static/vendors/bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+    <title>Folio - AI Egyptian History</title>
+  </head>
+  <body>
+    <nav
+      class="row w-100 px-0 px-xl-5 g-0 justify-content-between align-items-center position-fixed top-0"
+    >
+      <div class="logo h-100 col-2 col-md-1 col-lg-2 text-align-start">
+        <a href="Folio.html"><img src="static/img/logo.png" alt="" /></a>
+      </div>
+      <div
+        class="linkNav w-50 h-100 d-none d-md-flex align-items-center col-md-8"
+      >
+        <ul
+          class="d-flex gap-2 w-100 h-100 justify-content-center align-items-center p-0 m-0"
+        >
+          <li
+            class="h-100 w-25 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+          >
+            <a
+              href=""
+              data-en="Home"
+              data-ar="الرئيسية"
+              class="text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+              >Home</a
+            >
+          </li>
+          <li
+            class="h-100 w-25 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+          >
+            <a
+              href="vision.html"
+              data-en="Vision"
+              data-ar="رؤيتنا"
+              class="text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+              >Vision</a
+            >
+          </li>
+          <li
+            class="h-100 w-25 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+          >
+            <a
+              href="Folio.html"
+              data-en="Folio"
+              data-ar="أعمالنا"
+              class="text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+              >Folio</a
+            >
+          </li>
+          <li
+            class="h-100 w-25 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+          >
+            <a
+              href=""
+              data-en="About"
+              data-ar="عنا"
+              class="text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+              >about</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        class="icon d-none d-md-flex justify-content-end align-items-center gap-3 col-md-3 col-lg-2"
+      >
+        <a
+          href="javascript:void(0)"
+          id="lang-switch"
+          class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+        >
+          <i class="fa-solid fa-globe fs-5"></i>
+        </a>
+        <a
+          href=""
+          class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+          ><i class="fa-brands fa-facebook-f fs-5"></i
+        ></a>
+        <a
+          href=""
+          class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+          ><i class="fa-brands fa-instagram fs-5"></i
+        ></a>
+        <a
+          href=""
+          class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+          ><i class="fa-brands fa-linkedin-in fs-5"></i
+        ></a>
+      </div>
+      <div
+        class="iconMain fs-1 d-flex justify-content-end align-items-center d-md-none col-6 h-100"
+      >
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
+      <div
+        class="main d-md-none d-flex flex-column position-fixed vh-100 top-0 start-0 w-50"
+      >
+        <div class="logo h-25">
+          <a href="Folio.html"><img src="static/img/logo.png" alt="" /></a>
+        </div>
+        <div class="h-75 d-flexalign-items-center">
+          <ul
+            class="h-50 d-flex justify-content-center align-items-center flex-column p-0 m-0"
+          >
+            <li
+              class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+            >
+              <a
+                href=""
+                data-en="Home"
+                data-ar="الرئيسية"
+                class="w-100 h-100 text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+                >Home</a
+              >
+            </li>
+            <li
+              class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+            >
+              <a
+                href="vision.html"
+                data-en="Vision"
+                data-ar="رؤيتنا"
+                class="text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+                >Vision</a
+              >
+            </li>
+            <li
+              class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+            >
+              <a
+                href="Folio.html"
+                data-en="Folio"
+                data-ar="أعمالنا"
+                class="text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+                >Folio</a
+              >
+            </li>
+            <li
+              class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+            >
+              <a
+                href=""
+                data-en="About"
+                data-ar="عنا"
+                class="text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+                >about</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="icon d-flex justify-content-center align-items-center gap-3 py-4 px-2"
+        >
+          <a
+            href="javascript:void(0)"
+            id="lang-switch-mobile"
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+          >
+            <i class="fa-solid fa-globe fs-5"></i>
+          </a>
+          <a
+            href=""
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+            ><i class="fa-brands fa-facebook-f fs-5"></i
+          ></a>
+          <a
+            href=""
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+            ><i class="fa-brands fa-instagram fs-5"></i
+          ></a>
+          <a
+            href=""
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+            ><i class="fa-brands fa-linkedin-in fs-5"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <header class="d-flex justify-content-center align-items-center">
+      <div class="pannerVideo position-absolute z-n1 w-100 h-100 top-0 end-0">
+        <video
+          src="static/img/WhatsApp Video 2026-03-18 at 18.34.58.mp4"
+          muted
+          loop
+          autoplay
+        ></video>
+      </div>
+      <div
+        class="titleHeader d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1 class="d-flex justify-content-center"></h1>
+        <p
+          class=""
+          data-en="Step into a world where ancient stone finds its voice. Using cutting-edge AI, we breathe life into the silence of history, bridging the gap between timeless relics and the modern pulse"
+          data-ar="خطوة داخل عالم تنطق فيه الأحجار القديمة بصوتها الخاص. باستخدام الذكاء الاصطناعي المتطور، نبث الحياة في صمت التاريخ، لنصنع جسراً بين الماضي العريق ونبض العصر الحديث"
+        >
+          Step into a world where ancient stone finds its voice. Using
+          cutting-edge AI, we breathe life into the silence of history, bridging
+          the gap between timeless relics and the modern pulse
+        </p>
+        <a href="Frame.html" data-en="Bring to Life" data-ar="ابدأ الحياة"
+          >Bring to Life</a
+        >
+      </div>
+    </header>
+    <section
+      class="about row g-0 px-5 d-flex flex-md-row align-items-center flex-column-reverse min-vh-100 w-100"
+    >
+      <div
+        class="aboutUs py-5 py-md-0 col-10 col-md-6 d-flex align-items-center align-items-md-start flex-column"
+      >
+        <h2 data-en="A Story Reborn" data-ar="قصة تُولد من جديد">
+          A Story Reborn
+        </h2>
+        <p
+          class="text-center text-md-start"
+          data-en="Discover a new way to experience history. Our platform transforms simple photos of statues into immersive stories. Users can capture any statue with their camera, and the system instantly recognizes it, revealing its identity, origin, and cultural significance.
+
+Once identified, each statue comes alive through short documentary videos, rich historical narratives, and visual storytelling that connects the past with the present. Instead of just seeing a statue, you now understand its meaning, the civilization it belongs to, and the story it tells.
+
+Whether you're exploring ancient ruins, museums, or public spaces, A Story Reborn turns every statue into a gateway to history. It is more than an app—it is a bridge between technology, culture, and human heritage."
+          data-ar="اكتشف طريقة جديدة لتجربة التاريخ. يحوّل هذا الموقع الصور البسيطة للتماثيل إلى قصص تفاعلية حية. يمكن للمستخدم تصوير أي تمثال، ليقوم النظام بالتعرف عليه فورًا وعرض اسمه وأصله وأهميته الثقافية.
+
+بعد التعرف عليه، يتحول كل تمثال إلى قصة حية من خلال فيديوهات وثائقية قصيرة وسرد تاريخي غني وتجربة بصرية تربط الماضي بالحاضر. بدلًا من مجرد مشاهدة التمثال، ستفهم معناه، والحضارة التي ينتمي إليها، والقصة التي يحملها.
+
+سواء كنت تتجول في مواقع أثرية أو متاحف أو أماكن عامة، فإن قصة تولد من جديد تجعل كل تمثال بوابة إلى التاريخ. إنه أكثر من مجرد تطبيق—إنه جسر بين التكنولوجيا والثقافة والتراث الإنساني. "
+        >
+          Discover a new way to experience history. Our platform transforms
+          simple photos of statues into immersive stories. Users can capture any
+          statue with their camera, and the system instantly recognizes it,
+          revealing its identity, origin, and cultural significance. Once
+          identified, each statue comes alive through short documentary videos,
+          rich historical narratives, and visual storytelling that connects the
+          past with the present. Instead of just seeing a statue, you now
+          understand its meaning, the civilization it belongs to, and the story
+          it tells. Whether you're exploring ancient ruins, museums, or public
+          spaces, A Story Reborn turns every statue into a gateway to history.
+          It is more than an app—it is a bridge between technology, culture, and
+          human heritage.
+        </p>
+        <a href="" data-en="Explore More" data-ar="اكتشف المزيد"
+          >Explore More</a
+        >
+      </div>
+      <div
+        class="cardAbout col-12 col-md-6 py-md-0 position-relative h-100 d-flex justify-content-center align-items-center"
+      >
+        <div
+          class="img col-10 col-md-8 d-flex align-items-center position-relative overflow-hidden"
+        >
+          <img src="static/img/cardAbout-1.png" alt="" />
+          <img
+            src="static/img/cardAbout-1-4.png"
+            class="lastImg position-absolute"
+            alt=""
+          />
+        </div>
+        <span
+          class="py-2 px-4 position-absolute"
+          data-en="I am awake"
+          data-ar="أنا مستيقظ"
+          >I am awake</span
+        >
+        <img
+          src="static/img/cardAbout-1-2.png"
+          class="imgRotate position-absolute translate-middle w-100"
+          alt=""
+        />
+        <img
+          src="static/img/cardAbout-1-3.png"
+          class="imgRotate2 position-absolute translate-middle start-50 col-10 col-md-9"
+          alt=""
+        />
+      </div>
+    </section>
+    <section
+      class="data row flex-column d-flex flex-md-row g-0 align-items-center"
+    >
+      <div class="dataNum col-12 col-md-3">
+        <b class="num" data-goal="5000">0</b>
+        <p
+          class="px-5"
+          data-en="The statues attract a large number of visitors"
+          data-ar="التماثيل تجذب عدد كبير من الزوار"
+        >
+          The statues attract a large number of visitors
+        </p>
+      </div>
+      <div class="dataNum col-12 col-md-3">
+        <b class="num" data-goal="500">0</b>
+        <p
+          class="px-5"
+          data-en="The library contains a large number of encyclopedias."
+          data-ar="المكتبة تحتوي على عدد كبير من الموسوعات."
+        >
+          The library contains a large number of encyclopedias.
+        </p>
+      </div>
+      <div class="dataNum col-12 col-md-3">
+        <b class="num" data-goal="700">0</b>
+        <p
+          class="px-5"
+          data-en="The platform offers high quality videos of the statues."
+          data-ar="المنصة تقدم فيديوهات عالية الجودة للتماثيل."
+        >
+          The platform offers high-quality videos of the statues.
+        </p>
+      </div>
+      <div class="dataNum col-12 col-md-3">
+        <b class="num" data-goal="1200">0</b>
+        <p
+          class="px-5"
+          data-en="The platform offers long documentary videos."
+          data-ar="فيديوهات وثائقية طويلة تقدمها المنصة."
+        >
+          The platform offers long documentary videos.
+        </p>
+      </div>
+    </section>
+    <section class="folio">
+      <div class="container w-100 d-flex align-items-center">
+        <div class="cards row d-flex jusify-cintent-center align-items-center">
+          <div class="imgCard col-6">
+            <img src="static/img/TutankhamunCard.png" alt="" />
+          </div>
+          <div class="titleCard d-flex col-6 flex-column align-items-start">
+            <b data-en="Tutankhamun" data-ar="توت عنخ آمون">Tutankhamun</b>
+            <p
+              class="py-2 m-0"
+              data-en="I have returned from the darkness of centuries to tell you the story..."
+              data-ar="لقد عدت من ظلمات القرون لأحكي لكم قصة عرش طالبت به عندما كنت طفلاً..."
+            >
+              I have returned from the darkness of centuries...
+            </p>
+            <a
+              href="Folio.html"
+              data-en="Reveal My Secrets"
+              data-ar="اكتشف أسراري"
+              >Reveal My Secrets</a
+            >
+          </div>
+        </div>
+        <div class="cards row d-flex jusify-cintent-center align-items-center">
+          <div class="imgCard col-6">
+            <img src="static/img/TutankhamunCard.png" alt="" />
+          </div>
+          <div class="titleCard d-flex col-6 flex-column align-items-start">
+            <b data-en="Tutankhamun" data-ar="توت عنخ آمون">Tutankhamun</b>
+            <p
+              class="py-2 m-0"
+              data-en="I have returned from the darkness of centuries to tell you the story..."
+              data-ar="لقد عدت من ظلمات القرون لأحكي لكم قصة عرش طالبت به عندما كنت طفلاً..."
+            >
+              I have returned from the darkness of centuries...
+            </p>
+            <a
+              href="Folio.html"
+              data-en="Reveal My Secrets"
+              data-ar="اكتشف أسراري"
+              >Reveal My Secrets</a
+            >
+          </div>
+        </div>
+        <div class="cards row d-flex jusify-cintent-center align-items-center">
+          <div class="imgCard col-6">
+            <img src="static/img/TutankhamunCard.png" alt="" />
+          </div>
+          <div class="titleCard d-flex col-6 flex-column align-items-start">
+            <b data-en="Tutankhamun" data-ar="توت عنخ آمون">Tutankhamun</b>
+            <p
+              class="py-2 m-0"
+              data-en="I have returned from the darkness of centuries to tell you the story..."
+              data-ar="لقد عدت من ظلمات القرون لأحكي لكم قصة عرش طالبت به عندما كنت طفلاً..."
+            >
+              I have returned from the darkness of centuries...
+            </p>
+            <a
+              href="Folio.html"
+              data-en="Reveal My Secrets"
+              data-ar="اكتشف أسراري"
+              >Reveal My Secrets</a
+            >
+          </div>
+        </div>
+        <div class="cards row d-flex jusify-cintent-center align-items-center">
+          <div class="imgCard col-6">
+            <img src="static/img/TutankhamunCard.png" alt="" />
+          </div>
+          <div class="titleCard d-flex col-6 flex-column align-items-start">
+            <b data-en="Tutankhamun" data-ar="توت عنخ آمون">Tutankhamun</b>
+            <p
+              class="py-2 m-0"
+              data-en="I have returned from the darkness of centuries to tell you the story..."
+              data-ar="لقد عدت من ظلمات القرون لأحكي لكم قصة عرش طالبت به عندما كنت طفلاً..."
+            >
+              I have returned from the darkness of centuries...
+            </p>
+            <a
+              href="Folio.html"
+              data-en="Reveal My Secrets"
+              data-ar="اكتشف أسراري"
+              >Reveal My Secrets</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="videoAi">
+      <video src="static/img/videoAi.mp4" loop autoplay muted></video>
+    </section>
+    <section class="services vh-100 overflow-hidden">
+      <div
+        class="pannerServices d-flex w-100 h-100 position-relative align-items-center"
+      >
+        <div class="tittle">
+          <h3 data-en="See Our Best services" data-ar="شاهد أفضل خدماتنا">
+            See Our Best
+            <span data-en="services" data-ar="خدماتنا">services</span>
+          </h3>
+        </div>
+        <img
+          src="static/img/pannerServices.png"
+          class="position-absolute"
+          alt=""
+        />
+        <div class="ourServices">
+          <div
+            class="boxpopup1 allpopup wow animate__animated animate__fadeInRight"
+            data-wow-delay="0.1s"
+            data-en="AI-Powered Avatar Storytelling"
+            data-ar="رواية القصص عبر الأفاتار بالذكاء الاصطناعي"
+          >
+            AI-Powered Avatar Storytelling
+            <div
+              class="popup d-none d-md-flex"
+              data-en="We breathe life into statues..."
+              data-ar="نبث الحياة في التماثيل والوجوه القديمة باستخدام تقنيات التعلم العميق المتقدمة..."
+            >
+              We breathe life into statues and ancient faces using advanced Deep
+              Learning techniques.
             </div>
-            <div class="linkNav w-50 h-100 d-none d-md-flex  align-items-center col-md-8  ">
-                <ul class="d-flex gap-2 w-100 h-100  justify-content-center align-items-center p-0 m-0">
-                    <li class="h-100  w-25 d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="" class=" text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">Home</a></li>
-                    <li class="h-100  w-25  d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="vision.html" class=" text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">Vision</a></li>
-                    <li class="h-100  w-25  d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="Folio.html" class=" text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">Folio</a></li>
-                    <li class="h-100  w-25  d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="" class=" text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">about</a></li>
-                </ul>
+          </div>
+          <div
+            class="boxpopup2 allpopup wow animate__animated animate__fadeInRight"
+            data-wow-delay="0.2s"
+            data-en="Instant Artifact Recognition"
+            data-ar="التعرف الفوري على القطع الأثرية"
+          >
+            Instant Artifact Recognition
+            <div
+              class="popup d-none d-md-flex"
+              data-en="By simply pointing a smartphone camera..."
+              data-ar="ببساطة عن طريق توجيه كاميرا الهاتف الذكي أو تحميل صورة، يقوم نظامنا بتحديد التمثال بدقة..."
+            >
+              By simply pointing a smartphone camera or uploading an image, our
+              system accurately identifies the statue.
             </div>
-            <div class="icon d-none d-md-flex justify-content-end align-items-center gap-3 col-md-3  col-lg-2">
-                <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"><i class="fa-brands fa-facebook-f fs-5 "></i></a>
-                <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"><i class="fa-brands fa-instagram fs-5 "></i></a>
-                <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"><i class="fa-brands fa-linkedin-in fs-5 "></i></a>
+          </div>
+          <div
+            class="boxpopup3 allpopup wow animate__animated animate__fadeInRight"
+            data-wow-delay="0.3s"
+            data-en="Layered Content Experience"
+            data-ar="تجربة محتوى متعدد الطبقات"
+          >
+            Layered Content Experience
+            <div
+              class="popup d-none d-md-flex"
+              data-en="A knowledge journey ranging from quick teasers..."
+              data-ar="رحلة معرفية تتراوح من العروض التشويقية المرئية السريعة إلى مقاطع الفيديو الكاملة المروية بالذكاء الاصطناعي..."
+            >
+              A "knowledge journey" ranging from quick visual teasers to full
+              AI-narrated videos.
             </div>
-            <div class="iconMain fs-1 d-flex justify-content-end align-items-center d-md-none col-6 h-100">
-                <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div
+            class="boxpopup4 allpopup wow animate__animated animate__fadeInRight"
+            data-wow-delay="0.4s"
+            data-en="AI Voice & Multilingual Support"
+            data-ar="صوت الذكاء الاصطناعي ودعم اللغات"
+          >
+            AI Voice & Multilingual Support
+            <div
+              class="popup d-none d-md-flex"
+              data-en="We provide realistic AI voice-overs..."
+              data-ar="نحن نقدم تعليقات صوتية واقعية من الذكاء الاصطناعي للشخصيات التاريخية مع دعم لغات متعددة..."
+            >
+              We provide realistic AI voice-overs for historical figures with
+              multi-language support.
             </div>
-            <div class="main d-md-none d-flex flex-column position-fixed vh-100 top-0 start-0 w-50 ">
-                <div class="logo h-25">
-                    <a href="Folio.html"><img src="static/img/logo.png" alt=""></a>
-                </div>
-                <div class="h-75 d-flexalign-items-center ">
-                    <ul class="h-50 d-flex justify-content-center align-items-center flex-column  p-0 m-0">
-                        <li class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="" class="w-100 h-100 text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">Home</a></li>
-                        <li class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="vision.html" class="text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">Vision</a></li>
-                        <li class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="Folio.html" class="text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">Folio</a></li>
-                        <li class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="" class="text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">about</a></li>
-                    </ul>
-                </div>
-                <div class="icon d-flex justify-content-center align-items-center gap-3 py-4 px-2">
-                    <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"><i class="fa-brands fa-facebook-f fs-5 "></i></a>
-                    <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"><i class="fa-brands fa-instagram fs-5 "></i></a>
-                    <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"><i class="fa-brands fa-linkedin-in fs-5 "></i></a>
-                </div>
+          </div>
+          <div
+            class="boxpopup5 allpopup wow animate__animated animate__fadeInRight"
+            data-wow-delay="0.5s"
+            data-en="Interactive Digital Archive"
+            data-ar="الأرشيف الرقمي التفاعلي"
+          >
+            Interactive Digital Archive
+            <div
+              class="popup d-none d-md-flex"
+              data-en="A structured, cloud-based database..."
+              data-ar="قاعدة بيانات منظمة تعتمد على الحوسبة السحابية تتيح للمستخدمين الوصول إلى السير التاريخية في أي وقت..."
+            >
+              A structured, cloud-based database that allows users to access
+              historical biographies anytime.
             </div>
-        </nav>
-        <header class="d-flex justify-content-center align-items-center">
-            <div class="pannerVideo position-absolute z-n1 w-100 h-100 top-0 end-0" >
-                <video src="static/img/WhatsApp Video 2026-03-18 at 18.34.58.mp4" muted loop autoplay  ></video>
-            </div>
-            <div class="titleHeader d-flex justify-content-center align-items-center flex-column ">
-                <h1 class="d-flex justify-content-center"></h1>
-                <p class="" >Step into a world where ancient stone finds its voice. Using cutting-edge AI, we breathe life into the silence of history, bridging the gap between timeless relics and the modern pulse</p>
-                <a href="Frame.html">Bring to Life</a>
-            </div>
-        </header>
-        <section class="about row g-0  px-1 d-flex flex-md-row align-items-center flex-column-reverse min-vh-100 w-100 ">
-            <div class="aboutUs  py-5 py-md-0 col-12 col-md-6  d-flex align-items-center align-items-md-start flex-column">
-                <h2>A Story Reborn</h2>
-                <p class="text-center text-md-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, enim eum illum placeat totam porro consequuntur omnis iure in sint numquam expedita quia quae nobis, consequatur reiciendis ex modi adipisci ....</p>
-                <a href="">Explore More</a>
-            </div>
-            <div class="cardAbout col-12 col-md-6  py-md-0 position-relative h-100  d-flex justify-content-center  align-items-center ">
-                <div class="img col-12  col-md-8 d-flex align-items-center position-relative overflow-hidden">
-                    <img src="static/img/cardAbout-1.png" alt="">
-                    <img src="static/img/cardAbout-1-4.png" class="lastImg position-absolute" alt="">
-                </div>
-                <span class="py-2 px-4 position-absolute">I am awake</span>
-                <img src="static/img/cardAbout-1-2.png" class="imgRotate  position-absolute translate-middle w-100" alt="">
-                <img src="static/img/cardAbout-1-3.png" class="imgRotate2   position-absolute translate-middle  start-50 col-12 col-md-9" alt="">
-            </div>
-        </section>
-        <section class="data row flex-column d-flex flex-md-row g-0 align-items-center">
-            <div class="dataNum col-12 col-md-3">
-                <b class="num" data-goal="1000">0</b>
-                <p>High-quality video of  the statues</p>
-            </div>
-            <div class="dataNum col-12 col-md-3">
-                <b class="num" data-goal="500">0</b>
-                <p>High-quality video of  the statues</p>
-            </div>
-            <div class="dataNum col-12 col-md-3">
-                <b class="num" data-goal="700">0</b>
-                <p>High-quality video of  the statues</p>
-            </div>
-            <div class="dataNum col-12 col-md-3">
-                <b class="num" data-goal="1200">0</b>
-                <p>High-quality video of  the statues</p>
-            </div>
-        </section>
-        <section class="folio">
-            <div class="container w-100 d-flex  align-items-center">
-                <div class="cards row d-flex jusify-cintent-center align-items-center">
-                    <div class="imgCard col-6">
-                        <img src="static/img/TutankhamunCard.png" alt="">
-                    </div>
-                    <div class="titleCard d-flex col-6 flex-column align-items-start">
-                        <b>Tutankhamun</b>
-                        <p class="py-2 m-0">I have returned from the darkness of centuries to tell you the story of a throne I claimed as a child, and a world I reshaped with my own hands. My tomb was not just a burial, but a message of eternity spoken in gold when all went silent. Are you ready to learn how I faced my destiny?.....</p>
-                        <a href="Folio.html">Reveal My Secrets</a>
-                    </div>
-                </div>
-                <div class="cards row d-flex jusify-cintent-center align-items-center">
-                    <div class="imgCard col-6">
-                        <img src="static/img/TutankhamunCard.png" alt="">
-                    </div>
-                    <div class="titleCard d-flex col-6 flex-column align-items-start">
-                        <b>Tutankhamun</b>
-                        <p class="py-2 m-0">I have returned from the darkness of centuries to tell you the story of a throne I claimed as a child, and a world I reshaped with my own hands. My tomb was not just a burial, but a message of eternity spoken in gold when all went silent. Are you ready to learn how I faced my destiny?.....</p>
-                        <a href="Folio.html">Reveal My Secrets</a>
-                    </div>
-                </div>
-                <div class="cards row d-flex jusify-cintent-center align-items-center">
-                    <div class="imgCard col-6">
-                        <img src="static/img/TutankhamunCard.png" alt="">
-                    </div>
-                    <div class="titleCard d-flex col-6 flex-column align-items-start">
-                        <b>Tutankhamun</b>
-                        <p class="py-2 m-0">I have returned from the darkness of centuries to tell you the story of a throne I claimed as a child, and a world I reshaped with my own hands. My tomb was not just a burial, but a message of eternity spoken in gold when all went silent. Are you ready to learn how I faced my destiny?.....</p>
-                        <a href="Folio.html">Reveal My Secrets</a>
-                    </div>
-                </div>
-                <div class="cards row d-flex jusify-cintent-center align-items-center">
-                    <div class="imgCard col-6">
-                        <img src="static/img/TutankhamunCard.png" alt="">
-                    </div>
-                    <div class="titleCard d-flex col-6 flex-column align-items-start">
-                        <b>Tutankhamun</b>
-                        <p class="py-2 m-0">I have returned from the darkness of centuries to tell you the story of a throne I claimed as a child, and a world I reshaped with my own hands. My tomb was not just a burial, but a message of eternity spoken in gold when all went silent. Are you ready to learn how I faced my destiny?.....</p>
-                        <a href="Folio.html">Reveal My Secrets</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="videoAi">
-            <video src="static/img/videoAi.mp4" loop autoplay muted></video>
-        </section>
-        <section class="services vh-100 overflow-hidden">
-            <div class="pannerServices d-flex w-100 h-100 position-relative align-items-center">
-                <div class="tittle ">
-                    <h3>See Our Best <span>services</span> </h3>
-                </div>
-                <img src="static/img/pannerServices.png" class="position-absolute " alt="">
-                <div class="ourServices">
-                    <div class="boxpopup1 allpopup wow animate__animated  animate__fadeInRight " data-wow-delay="0.1s">
-                        AI-Powered Avatar Storytelling
-                        <div class="popup d-none d-md-flex">
-                            We breathe life into statues and ancient faces using advanced Deep Learning techniques. Artifacts "re-enact" their historical roles and speak directly to visitors, eliminating museum stillness and creating a breathtaking visual experience.
-                        </div>
-                    </div>
-                    <div class="boxpopup2 allpopup wow animate__animated  animate__fadeInRight " data-wow-delay="0.2s">
-                        Instant Artifact Recognition
-                        <div class="popup d-none d-md-flex">
-                            By simply pointing a smartphone camera or uploading an image, our system accurately identifies the statue and provides real-time data, eliminating the need for tedious manual searching.
-                        </div>
-                    </div>
-                    <div class="boxpopup3 allpopup wow animate__animated  animate__fadeInRight " data-wow-delay="0.3s">
-                        Layered Content Experience
-                        <div class="popup d-none d-md-flex">
-                            Layered Content Experience: A "knowledge journey" ranging from quick visual teasers and full AI-narrated videos to an in-depth digital encyclopedia for enthusiasts.
-                        </div>
-                    </div>
-                    <div class="boxpopup4 allpopup wow animate__animated  animate__fadeInRight " data-wow-delay="0.4s">
-                        AI Voice & Multilingual Support
-                        <div class="popup d-none d-md-flex">
-                            We provide realistic AI voice-overs for historical figures with multi-language support, making Egyptian history accessible to global tourists in their native tongues.
-                        </div>
-                    </div>
-                    <div class="boxpopup5 allpopup wow animate__animated  animate__fadeInRight " data-wow-delay="0.5s">
-                        Interactive Digital Archive
-                        <div class="popup d-none d-md-flex">
-                            A structured, cloud-based database that allows users to access historical biographies anytime, anywhere, serving as a sustainable educational and tourism reference.
-                        </div>
-                    </div>
-                </div>
-                <div class="end d-none d-md-flex">
-                    <h4><i class="fa-solid fa-rotate-right"></i>Just as we moved your phone || we moved the Antiquities</h4>
-                </div>
-            </div>
-        </section>
-        <footer class="border-top">
-            <div class="box w-100 row   px-5 ">
-                <div class="logoFooter col-12 col-md-4 ">
-                    <img src="static/img/logo.png"  alt="">
-                </div>
-                <div class="icon col-12 col-md-4 d-flex gap-4 align-items-center justify-content-center">
-                    <a href="" class="text-decoration-none  border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1  overflow-hidden"><i class="fa-brands fa-facebook-f fs-5 "></i></a>
-                    <a href="" class="text-decoration-none  border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1  overflow-hidden"><i class="fa-brands fa-instagram fs-5 "></i></a>
-                    <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1  overflow-hidden"><i class="fa-brands fa-linkedin-in fs-5 "></i></a>
-                </div>
-                <div class="copyRight flex-md-row flex-column col-12 col-md-4 d-flex justify-content-center align-items-center gap-4">
-                    <p class="m-0">Terms of Service</p>
-                    <p class="m-0">privacy Policy</p>
-                </div>
-            </div>
-            <div class="endFooter d-flex justify-content-center mx-5 py-4 border-top">
-                <p class="m-0">
-                    @ ADHAM
-                </p>
-            </div>
-        </footer>
-        <script src="static/js/jequery.js"></script>
-        <script src="static/vendors/animations/WOW-master/dist/wow.min.js"></script>
-        <script src="static/vendors/slick/slick.min.js"></script>
-        <script src="static/vendors/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
-        <script src="static/js/commen.js"></script>
-        <script src="static/js/main.js"></script>
-    </body>
+          </div>
+        </div>
+        <div class="end d-none d-md-flex">
+          <h4
+            data-en="Just as we moved your phone || we moved the Antiquities"
+            data-ar="تماما كما حركنا هاتفك || حركنا الآثار"
+          >
+            <i class="fa-solid fa-rotate-right"></i>Just as we moved your phone
+            || we moved the Antiquities
+          </h4>
+        </div>
+      </div>
+    </section>
+    <footer class="border-top">
+      <div class="box w-100 row px-5">
+        <div class="logoFooter col-12 col-md-4">
+          <img src="static/img/logo.png" alt="" />
+        </div>
+        <div
+          class="icon col-12 col-md-4 d-flex gap-4 align-items-center justify-content-center"
+        >
+          <a
+            href=""
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+            ><i class="fa-brands fa-facebook-f fs-5"></i
+          ></a>
+          <a
+            href=""
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+            ><i class="fa-brands fa-instagram fs-5"></i
+          ></a>
+          <a
+            href=""
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+            ><i class="fa-brands fa-linkedin-in fs-5"></i
+          ></a>
+        </div>
+        <div
+          class="copyRight flex-md-row flex-column col-12 col-md-4 d-flex justify-content-center align-items-center gap-4"
+        >
+          <p class="m-0" data-en="Terms of Service" data-ar="شروط الخدمة">
+            Terms of Service
+          </p>
+          <p class="m-0" data-en="privacy Policy" data-ar="سياسة الخصوصية">
+            privacy Policy
+          </p>
+        </div>
+      </div>
+      <div class="endFooter d-flex justify-content-center mx-5 py-4 border-top">
+        <p class="m-0">@ ADHAM</p>
+      </div>
+    </footer>
+    <script src="static/js/jequery.js"></script>
+    <script src="static/vendors/animations/WOW-master/dist/wow.min.js"></script>
+    <script src="static/vendors/slick/slick.min.js"></script>
+    <script src="static/vendors/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
 </html>

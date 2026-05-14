@@ -1,90 +1,267 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="static/css/style.css">
-        <link rel="stylesheet" href="static/css/vision.css">
-        <link rel="stylesheet" href="static/css/all.min.css">
-        <link rel="stylesheet" href="static/vendors/slick/slick.css">
-        <link rel="stylesheet" href="static/vendors/slick/slick-theme.css">
-        <link rel="stylesheet" href="static/vendors/animations/animate.css-main/animate.css">
-        <link rel="stylesheet" href="static/vendors/bootstrap-5.3.8-dist/css/bootstrap.min.css">
-        <title>Document</title>
-    </head>
-    <body >
-        <nav class="row w-100 px-0 px-xl-5 g-0 justify-content-between align-items-center position-fixed top-0">
-            <div class="logo h-100 col-2 col-md-1 col-lg-2 text-align-start">
-                <a href="Folio.html"><img src="static/img/logo.png" alt=""></a>
-            </div>
-            <div class="linkNav w-50 h-100 d-none d-md-flex  align-items-center col-md-8  ">
-                <ul class="d-flex gap-2 w-100 h-100  justify-content-center align-items-center p-0 m-0">
-                    <li class="h-100  w-25 d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="index.html" class=" text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">Home</a></li>
-                    <li class="h-100  w-25  d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="vision.html" class=" text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">Vision</a></li>
-                    <li class="h-100  w-25  d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="Folio.html" class=" text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">Folio</a></li>
-                    <li class="h-100  w-25  d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="" class=" text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">about</a></li>
-                </ul>
-            </div>
-            <div class="icon d-none d-md-flex justify-content-end align-items-center gap-3 col-md-3  col-lg-2">
-                <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"><i class="fa-brands fa-facebook-f fs-5 "></i></a>
-                <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"><i class="fa-brands fa-instagram fs-5 "></i></a>
-                <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"><i class="fa-brands fa-linkedin-in fs-5 "></i></a>
-            </div>
-            <div class="iconMain fs-1 d-flex justify-content-end align-items-center d-md-none col-6 h-100">
-                <i class="fa-solid fa-bars-staggered"></i>
-            </div>
-            <div class="main d-md-none d-flex flex-column position-fixed vh-100 top-0 start-0 w-50 ">
-                <div class="logo h-25">
-                    <a href="Folio.html"><img src="static/img/logo.png" alt=""></a>
-                </div>
-                <div class="h-75 d-flexalign-items-center ">
-                    <ul class="h-50 d-flex justify-content-center align-items-center flex-column  p-0 m-0">
-                        <li class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="" class="w-100 h-100 text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">Home</a></li>
-                        <li class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="" class="text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">Vision</a></li>
-                        <li class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="Folio.html" class="text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">Folio</a></li>
-                        <li class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden "><a href="" class="text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase">about</a></li>
-                    </ul>
-                </div>
-                <div class="icon d-flex justify-content-center align-items-center gap-3 py-4 px-2">
-                    <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"><i class="fa-brands fa-facebook-f fs-5 "></i></a>
-                    <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"><i class="fa-brands fa-instagram fs-5 "></i></a>
-                    <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"><i class="fa-brands fa-linkedin-in fs-5 "></i></a>
-                </div>
-            </div>
-        </nav>
-        <header class="vh-100"></header>
-        <section class="vision p-0 m-0 row ">
-        </section>
-        <section class="videKing vh-100" >
-            <p class="clo">x</p>
-            <div class=""><video src="static/videos/videoplayback.mp4" controls class=""></video></div>
-        </section>
-        <footer class="border-top">
-            <div class="box w-100 row  px-5 ">
-                <div class="logoFooter col-12 col-md-4 ">
-                    <img src="static/img/logo.png"  alt="">
-                </div>
-                <div class="icon col-12 col-md-4 d-flex gap-4 align-items-center justify-content-center">
-                    <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1  overflow-hidden"><i class="fa-brands fa-facebook-f fs-5 "></i></a>
-                    <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1  overflow-hidden"><i class="fa-brands fa-instagram fs-5 "></i></a>
-                    <a href="" class="text-decoration-none border-2 d-flex  justify-content-center align-items-center rounded-circle position-relative z-1  overflow-hidden"><i class="fa-brands fa-linkedin-in fs-5 "></i></a>
-                </div>
-                <div class="copyRight flex-md-row flex-column col-12 col-md-4 d-flex justify-content-center align-items-center gap-4">
-                    <p class="m-0">Terms of Service</p>
-                    <p class="m-0">privacy Policy</p>
-                </div>
-            </div>
-            <div class="endFooter d-flex justify-content-center mx-5 py-4 border-top">
-                <p class="m-0">
-                    @ ADHAM
-                </p>
-            </div>
-        </footer>
-        <script src="static/js/jequery.js"></script>
-        <script src="static/vendors/animations/WOW-master/dist/wow.min.js"></script>
-        <script src="static/vendors/slick/slick.min.js"></script>
-        <script src="static/vendors/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
-        <script src="static/js/commen.js"></script>
-        <script src="static/js/vision.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/vision.css" />
+    <link rel="stylesheet" href="static/css/all.min.css" />
+    <link rel="stylesheet" href="static/vendors/slick/slick.css" />
+    <link rel="stylesheet" href="static/vendors/slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="static/vendors/animations/animate.css-main/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="static/vendors/bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+    <title>Vision</title>
+  </head>
+  <body>
+    <nav
+      class="row w-100 px-0 px-xl-5 g-0 justify-content-between align-items-center position-fixed top-0"
+    >
+      <div class="logo h-100 col-2 col-md-1 col-lg-2 text-align-start">
+        <a href="Folio.html"><img src="static/img/logo.png" alt="" /></a>
+      </div>
+      <div
+        class="linkNav w-50 h-100 d-none d-md-flex align-items-center col-md-8"
+      >
+        <ul
+          class="d-flex gap-2 w-100 h-100 justify-content-center align-items-center p-0 m-0"
+        >
+          <li
+            class="h-100 w-25 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+          >
+            <a
+              href="index.html"
+              data-en="Home"
+              data-ar="الرئيسية"
+              class="text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+              >Home</a
+            >
+          </li>
+          <li
+            class="h-100 w-25 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+          >
+            <a
+              href="vision.html"
+              data-en="Vision"
+              data-ar="رؤيتنا"
+              class="text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+              >Vision</a
+            >
+          </li>
+          <li
+            class="h-100 w-25 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+          >
+            <a
+              href="Folio.html"
+              data-en="Folio"
+              data-ar="أعمالنا"
+              class="text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+              >Folio</a
+            >
+          </li>
+          <li
+            class="h-100 w-25 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+          >
+            <a
+              href=""
+              data-en="About"
+              data-ar="عنا"
+              class="text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+              >about</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        class="icon d-none d-md-flex justify-content-end align-items-center gap-3 col-md-3 col-lg-2"
+      >
+        <a
+          href="javascript:void(0)"
+          id="lang-switch"
+          class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+        >
+          <i class="fa-solid fa-globe fs-5"></i>
+        </a>
+        <a
+          href=""
+          class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+          ><i class="fa-brands fa-facebook-f fs-5"></i
+        ></a>
+        <a
+          href=""
+          class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+          ><i class="fa-brands fa-instagram fs-5"></i
+        ></a>
+        <a
+          href=""
+          class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+          ><i class="fa-brands fa-linkedin-in fs-5"></i
+        ></a>
+      </div>
+      <div
+        class="iconMain fs-1 d-flex justify-content-end align-items-center d-md-none col-6 h-100"
+      >
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
+      <div
+        class="main d-md-none d-flex flex-column position-fixed vh-100 top-0 start-0 w-50"
+      >
+        <div class="logo h-25">
+          <a href="Folio.html"><img src="static/img/logo.png" alt="" /></a>
+        </div>
+        <div class="h-75 d-flex align-items-center">
+          <ul
+            class="h-50 d-flex justify-content-center align-items-center flex-column p-0 m-0"
+          >
+            <li
+              class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+            >
+              <a
+                href="index.html"
+                data-en="Home"
+                data-ar="الرئيسية"
+                class="w-100 h-100 text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+                >Home</a
+              >
+            </li>
+            <li
+              class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+            >
+              <a
+                href="vision.html"
+                data-en="Vision"
+                data-ar="رؤيتنا"
+                class="text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+                >Vision</a
+              >
+            </li>
+            <li
+              class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+            >
+              <a
+                href="Folio.html"
+                data-en="Folio"
+                data-ar="أعمالنا"
+                class="text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+                >Folio</a
+              >
+            </li>
+            <li
+              class="h-25 w-100 d-flex justify-content-center align-items-center position-relative overflow-hidden"
+            >
+              <a
+                href=""
+                data-en="About"
+                data-ar="عنا"
+                class="text-decoration-none text-light d-flex justify-content-center align-items-center fs-5 fw-bold text-uppercase"
+                >about</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="icon d-flex justify-content-center align-items-center gap-3 py-4 px-2"
+        >
+          <a
+            href="javascript:void(0)"
+            id="lang-switch-mobile"
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+          >
+            <i class="fa-solid fa-globe fs-5"></i>
+          </a>
+          <a
+            href=""
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+            ><i class="fa-brands fa-facebook-f fs-5"></i
+          ></a>
+          <a
+            href=""
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+            ><i class="fa-brands fa-instagram fs-5"></i
+          ></a>
+          <a
+            href=""
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+            ><i class="fa-brands fa-linkedin-in fs-5"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <header class="">
+      <div
+        class="container-fluid h-100 position-relative z-3"
+        style="pointer-events: none"
+      >
+        <div class="row h-100 align-items-end justify-content-center px-5">
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center"
+            style="pointer-events: auto"
+          >
+            <p
+              class="fs-4 text-light"
+              data-en="Where the greatness of ancient Egypt lives forever"
+              data-ar="حيث تعيش عظمة مصر القديمة إلى الأبد"
+            ></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="vision p-0 m-0 row"></section>
+    <section class="videKing vh-100">
+      <p class="clo">x</p>
+      <div class="">
+        <video src="static/videos/videoplayback.mp4" controls class=""></video>
+      </div>
+    </section>
+    <footer class="border-top">
+      <div class="box w-100 row px-5">
+        <div class="logoFooter col-12 col-md-4">
+          <img src="static/img/logo.png" alt="" />
+        </div>
+        <div
+          class="icon col-12 col-md-4 d-flex gap-4 align-items-center justify-content-center"
+        >
+          <a
+            href=""
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+            ><i class="fa-brands fa-facebook-f fs-5"></i
+          ></a>
+          <a
+            href=""
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+            ><i class="fa-brands fa-instagram fs-5"></i
+          ></a>
+          <a
+            href=""
+            class="text-decoration-none border-2 d-flex justify-content-center align-items-center rounded-circle position-relative z-1 overflow-hidden"
+            ><i class="fa-brands fa-linkedin-in fs-5"></i
+          ></a>
+        </div>
+        <div
+          class="copyRight flex-md-row flex-column col-12 col-md-4 d-flex justify-content-center align-items-center gap-4"
+        >
+          <p class="m-0" data-en="Terms of Service" data-ar="شروط الخدمة">
+            Terms of Service
+          </p>
+          <p class="m-0" data-en="Privacy Policy" data-ar="سياسة الخصوصية">
+            Privacy Policy
+          </p>
+        </div>
+      </div>
+      <div class="endFooter d-flex justify-content-center mx-5 py-4 border-top">
+        <p class="m-0">@ ADHAM</p>
+      </div>
+    </footer>
+    <script src="static/js/jequery.js"></script>
+    <script src="static/vendors/animations/WOW-master/dist/wow.min.js"></script>
+    <script src="static/vendors/slick/slick.min.js"></script>
+    <script src="static/vendors/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/commen.js"></script>
+    <script src="static/js/vision.js"></script>
+  </body>
 </html>

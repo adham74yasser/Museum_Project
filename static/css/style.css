@@ -373,7 +373,7 @@ header p {
 
 @media (max-width: 576px ) {
     .cardAbout span {
-        top: -15%;
+        top: -10%;
         left: unset;
     }
 }
