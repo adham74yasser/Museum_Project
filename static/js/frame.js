@@ -70,23 +70,24 @@ function showResult(statueName) {
     if (isVideoPlaying) return;
     isVideoPlaying = true;
     
-    // 1. إيقاف الكاميرا إذا كانت تعمل
+    // إيقاف الكاميرا وتفريغ محتوى الحاوية فوراً لمنع أي تضارب في الأبعاد
     if (webcam) {
         webcam.stop();
         webcam = null;
     }
-
+    
     const video = document.getElementById("statue-video");
     const imagePreview = document.getElementById("uploaded-image-preview");
     const webcamContainer = document.getElementById("webcam-container");
 
+    // إخفاء فريمات الكاميرا والصور تماماً
+    webcamContainer.innerHTML = "";
     webcamContainer.style.display = "none";
     imagePreview.style.display = "none";
-    video.style.display = "none"; 
     
+    // إعداد وتشغيل الفيديو داخل الفريم الثابت والمحمي بالـ CSS
     const fileName = encodeURIComponent(statueName);
     video.src = `static/videos/${fileName}.mp4`; 
-    
     video.style.display = "block"; 
     video.play();
     
@@ -102,10 +103,16 @@ function showResult(statueName) {
 function resetUI() {
     detectionCount = 0;
     isVideoPlaying = false;
+    isLocked = false; // إعادة فتح القفل عند عمل الـ Reset
+    
     if (webcam) {
         webcam.stop();
         webcam = null;
     }
+    
+    const webcamContainer = document.getElementById("webcam-container");
+    if (webcamContainer) webcamContainer.innerHTML = "";
+
     document.getElementById("webcam-container").style.display = "none";
     document.getElementById("uploaded-image-preview").style.display = "none";
     document.getElementById("statue-video").style.display = "none";

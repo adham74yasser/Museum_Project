@@ -551,14 +551,14 @@ header p {
     position: relative;
 }
 
-.allpopup {
+/* .allpopup {
     border: 2px solid var(--first-color);
     border-radius: 5px;
     width: 300px;
     padding: 15px;
     color: var(--first-color);
     position: absolute;
-}
+} */
 
 .allpopup {
     border-radius: 20px;
@@ -673,7 +673,6 @@ header p {
 /* end services */
 /* start footer */
 footer {
-    box-shadow: 0 0 15px 0 var(--first-color) inset;
     color: var(--first-color);
 }
 

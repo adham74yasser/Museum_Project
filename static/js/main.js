@@ -139,4 +139,5 @@ $('.allpopup').mouseover(function() {
     $(this).find('.popup').css({ opacity: '0', visibility: "hidden" });
 });
 
+
 new WOW().init();

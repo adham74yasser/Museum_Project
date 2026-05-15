@@ -36,10 +36,18 @@
                 <input type="file" id="image-upload" accept="image/*" style="display:none" onchange="handleFileUpload(event)">
             </div>
 
-            <div class="visual-wrapper">
-                <div id="webcam-container" class="camera-frame"></div>
-                <img id="uploaded-image-preview" src="" style="display:none;">
-                <video id="statue-video" class="video-frame" playsinline></video>
+            <!-- تحديث الفريمات هنا لتكون بأبعاد ثابتة وموحدة ومقاومة للتمدد -->
+            <div class="visual-wrapper" style="display: flex; justify-content: center; align-items: center;">
+                
+                <!-- فريم الكاميرا الثابت (تقدر تغير الـ max-width والـ height حسب مقاسات تصميمك) -->
+                <div id="webcam-container" class="camera-frame" style="width: 100%; max-width: 500px; height: 350px; overflow: hidden; display: block;"></div>
+                
+                <!-- فريم صورة المعاينة الثابت بنفس المقاسات تماماً -->
+                <img id="uploaded-image-preview" src="" style="display: none; width: 100%; max-width: 500px; height: 350px; object-fit: cover; border-radius: inherit;">
+                
+                <!-- فريم الفيديو الثابت والموحد، مستحيل يكبر أو يتغير حجمه عن الفريم مهما كان مقاس الفيديو الأصلي -->
+                <video id="statue-video" class="video-frame" playsinline style="width: 100%; max-width: 500px; height: 350px; object-fit: cover; display: none;"></video>
+            
             </div>
 
             <div id="buttons-group" class="action-buttons" style="display:none;">

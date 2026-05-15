@@ -79,3 +79,18 @@ header {
 .body-card .btn:hover {
     letter-spacing: 2px;
 }
+
+@media (max-width : 500px) {
+    .cardFolioRight{
+        flex-direction: column !important ;
+    };
+    .cardFolioRight .card-img{
+        width: 100% !important;
+    }
+     .cardFolioRight .body-card{
+        width: 100% !important;
+    }
+    .body-card .textmu{
+        display: none !important;
+    }
+}
